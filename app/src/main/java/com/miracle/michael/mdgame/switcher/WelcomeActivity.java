@@ -82,7 +82,7 @@ public class WelcomeActivity extends Activity {
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-//        444  2
+//        444
         retrofit.create(QService.class).reqSwitcher(getPackageName()).enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
